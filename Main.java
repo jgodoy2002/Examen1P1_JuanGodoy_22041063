@@ -10,5 +10,8 @@ package Laboratorio5;
  * @author jcgof
  */
 public class Main {
-    
+    public static void main(String args[])
+    {
+        
+    }
 }

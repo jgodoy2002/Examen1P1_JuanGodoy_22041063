@@ -9,6 +9,17 @@ package Laboratorio5;
  *
  * @author jcgof
  */
-public class Normal {
+public class Normal extends Persona {
+
+    public Normal(String nombre, String poder, String debilidad, boolean escuadron, int fuerza, int agilidadfisica, int agilidadmental, boolean heroe) {
+        super(nombre, poder, debilidad, escuadron, fuerza, agilidadfisica, agilidadmental,heroe);
+    }
+
+    @Override
+    public String toString() {
+        return "Normal{" + super.toString() + '}';
+    }
+
+    
     
 }
