@@ -12,41 +12,64 @@ import java.util.ArrayList;
 public class BaseDatos {
     ArrayList<Persona> persona;
     ArrayList<Escuadron> escuadron;
+    ArrayList<Universo> universo;
     
-    public void agregarPersona(){
+    public void crearU(){
         
     }
     
-    public void eliminarPersona(){
+    public void modificarU(){
+    
+    }
+    
+    public void eliminarU(){
         
     }
     
-    public void modificarPersona(){
+    public void listarU(){
         
     }
     
-    public void crearSquad(){
+    public void crearE(){
         
     }
     
-    public void modificarSquad(){
+    public void modificarE(){
         
     }
     
-    public void eliminarSquad(){
+    public void eliminarE(){
         
     }
     
-    public void crearUniverso(){
+    public void listarE(){
         
     }
     
-    public void modficarUniverso(){
+    public void agregarPersonas(){
         
     }
     
-    public void eliminarUniverso(){
+    public void Batalla(){
         
     }
+    
+    public void crearP(){
+        
+    }
+    
+    public void modificarP(){
+       
+    }
+    
+    public void EliminarP(){
+        
+    }
+    
+    public void listarP(){
+        
+    }
+    
+    
     
 }
