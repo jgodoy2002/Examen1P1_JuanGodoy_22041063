@@ -9,7 +9,8 @@ package Laboratorio5;
  *
  * @author jcgof
  */
-public class Radioactivo extends Persona{
+public class Radioactivo extends Persona {
+
     private int edad;
     private String tipo;
 
@@ -19,8 +20,6 @@ public class Radioactivo extends Persona{
         this.tipo = tipo;
     }
 
-    
-    
     public Radioactivo(int edad, String tipo) {
         this.edad = edad;
         this.tipo = tipo;
@@ -46,6 +45,14 @@ public class Radioactivo extends Persona{
     public String toString() {
         return "Radioactivo{" + "edad al momento del accidente=" + edad + ", "
                 + "tipo de accidente=" + tipo + '}';
+    }
+
+    
+    public void final_chance(Persona p1, Persona p2){
+        int fuerza = p1.getFuerza();
+        int total = fuerza * 4;
+        p1.setFuerza(total);
+        System.out.println("Fuerza aumentada: " +p1.getFuerza());
     }
     
     

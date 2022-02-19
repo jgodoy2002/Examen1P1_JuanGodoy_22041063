@@ -9,15 +9,14 @@ package Laboratorio5;
  *
  * @author jcgof
  */
-public class Alien extends Extraterrestre{
+public class Alien extends Extraterrestre {
+
     private String planeta;
 
     public Alien(String planeta, String nombre, String poder, String debilidad, boolean escuadron, int fuerza, int agilidadfisica, int agilidadmental, boolean heroe) {
         super(nombre, poder, debilidad, escuadron, fuerza, agilidadfisica, agilidadmental, heroe);
         this.planeta = planeta;
     }
-
-    
 
     public String getPlaneta() {
         return planeta;
@@ -29,10 +28,14 @@ public class Alien extends Extraterrestre{
 
     @Override
     public String toString() {
-        return "Alien{" + super.toString() +  "planeta=" + planeta + '}';
+        return "Alien{" + super.toString() + "planeta=" + planeta + '}';
     }
-    
-    
-    
-    
+
+    public void final_chance(Persona p1, Persona p2) {
+        int fuerza = p1.getFuerza();
+        int total = fuerza * 4;
+        p1.setFuerza(total);
+        System.out.println("Fuerza aumentada: " + p1.getFuerza());
+    }
+
 }

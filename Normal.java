@@ -20,6 +20,11 @@ public class Normal extends Persona {
         return "Normal{" + super.toString() + '}';
     }
 
-    
+    public void final_chance(Persona p1, Persona p2){
+        int fuerza = p1.getFuerza();
+        int total = fuerza + (int)Math.ceil(fuerza*0.5);
+        p1.setFuerza(total);
+        System.out.println("La fuerza se aumento a: " +p1.getFuerza());
+    }
     
 }

@@ -35,4 +35,15 @@ public class SuperHumano extends Persona {
         return "SuperHumano{" + "superpoder=" + superpoder + '}';
     }
 
+    public void final_chance(Persona p1, Persona p2) {
+        int fuerza = p1.getFuerza();
+        int total = fuerza * 4;
+        p1.setFuerza(total);
+        System.out.println("Fuerza aumentada: " + p1.getFuerza());
+        int FuerzaA = p2.getFuerza();
+        int totalA = FuerzaA- (int) Math.ceil(FuerzaA * 0.5);
+        p2.setFuerza(totalA);
+        System.out.println("Fuerza debilitada del lider: " +p2.getFuerza());
+    }
+
 }

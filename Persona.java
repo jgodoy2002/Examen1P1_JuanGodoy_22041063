@@ -29,12 +29,12 @@ public class Persona {
         this.poder = poder;
         this.debilidad = debilidad;
         this.escuadron = escuadron;
-        if (total <= 150 && total >= 100) {
+        if (total >= 100) {
             this.fuerza = fuerza;
             this.agilidadfisica = agilidadfisica;
             this.agilidadmental = agilidadmental;
         } else {
-            JOptionPane.showMessageDialog(null, "Total del villano/heroe creado es superior a 150 o inferior a 100");
+            JOptionPane.showMessageDialog(null, "Total del villano/heroe creado es inferior a 100");
         }
         this.heroe = heroe;
     }
@@ -112,7 +112,7 @@ public class Persona {
     }
 
     public void final_chance(Persona p1, Persona p2) {
-
+        
     }
 
 }

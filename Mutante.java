@@ -31,7 +31,16 @@ public class Mutante extends Persona{
         return super.toString() + "Mutante :" + "mutacion=" + mutacion + '}';
     }
     
-    
+    public void final_chance(Persona p1, Persona p2){
+        int fuerza = p1.getFuerza();
+        int total = fuerza*2;
+        p1.setFuerza(total);
+        System.out.println("Fuerza actualizada: " + p1.getFuerza());
+        int fuerzaL = p2.getFuerza();
+        int verdadera = fuerzaL / 2;
+        p2.setFuerza(verdadera);
+        System.out.println("Fuerza del lider actualizada: " + p2.getFuerza());
+    }
     
     
 }

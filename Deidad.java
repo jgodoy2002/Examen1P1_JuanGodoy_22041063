@@ -9,7 +9,8 @@ package Laboratorio5;
  *
  * @author jcgof
  */
-public class Deidad extends Extraterrestre{
+public class Deidad extends Extraterrestre {
+
     private boolean creyentes;
     private String mitologio;
 
@@ -18,8 +19,6 @@ public class Deidad extends Extraterrestre{
         this.creyentes = creyentes;
         this.mitologio = mitologio;
     }
-
-    
 
     public boolean isCreyentes() {
         return creyentes;
@@ -41,6 +40,24 @@ public class Deidad extends Extraterrestre{
     public String toString() {
         return "Deidad{" + super.toString() + "creyentes=" + creyentes + ", mitologio=" + mitologio + '}';
     }
-    
-    
+
+    public void final_chance(Persona p1, Persona p2) {
+        int fuerza = p1.getFuerza();
+        int total = fuerza * 4;
+        p1.setFuerza(total);
+        System.out.println("Fuerza aumentada: " + p1.getFuerza());
+        int habilidadA = p2.getAgilidadfisica();
+        int totalA = habilidadA - (int) Math.ceil(habilidadA * 0.5);
+        p2.setAgilidadfisica(totalA);
+        int habilidadM = p2.getAgilidadmental();
+        int totalM = habilidadM - (int) Math.ceil(habilidadM * 0.5);
+        p2.setAgilidadmental(totalM);
+        int fuerzaA = p2.getFuerza();
+        int totalF = fuerzaA -(int)Math.ceil(fuerzaA *0.5);
+        p2.setFuerza(totalF);
+        System.out.println("Fuerza / Fisica / Mental :" +p2.getFuerza() + "/"
+                            + p2.getAgilidadfisica() + "/" + p2.getAgilidadmental());
+        
+    }
+
 }
